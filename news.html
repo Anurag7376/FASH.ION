@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .news-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .news-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-content h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .news-content p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Disaster News Portal</h1>
+        <p>Your source for the latest news on natural and man-made disasters</p>
+    </header>
+
+    <div class="container">
+        <article class="news-item">
+            <img src="example-image1.jpg" alt="Disaster Image 1">
+            <div class="news-content">
+                <h2>Major Earthquake Hits City</h2>
+                <p>On September 6, 2024, a major earthquake struck the city of Exampleville. The quake, measuring 7.8 on the Richter scale, has caused widespread damage and casualties. Emergency services are working around the clock to assist those affected.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="example-image2.jpg" alt="Disaster Image 2">
+            <div class="news-content">
+                <h2>Flooding in Riverdale</h2>
+                <p>Heavy rains have led to severe flooding in Riverdale, displacing hundreds of residents. Authorities have issued flood warnings and are conducting rescue operations to help those stranded by the rising waters.</p>
+            </div>
+        </article>
+
+        <article class="news-item">
+            <img src="example-image3.jpg" alt="Disaster Image 3">
+            <div class="news-content">
+                <h2>Wildfires Ravage Forest</h2>
+                <p>Wildfires continue to spread across the Example Forest, fueled by dry conditions and strong winds. Firefighters are battling the blazes, and evacuation orders have been issued for nearby communities.</p>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Disaster News Portal. All rights reserved.</p>
+    </footer>
+</body>
+</body>
+</html>
