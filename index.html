@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disaster Management and Aggregation software </title>
+    <title>FASH.ion </title>
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -16,134 +17,213 @@
         </style>
 </head>
 <body>
-    <button id="get-location">Get My Location</button>
-    <div id="location-info"></div>
+  
 
     <script src="script.js"></script>
     <section class="header"> 
         <nav>
-            <a href="index.html"><img src="slogo.png" alt=""></a>
+            <!-- <a href="index.html"></a> -->
+            <div class="logo">FASH.ion</div>
             <div class="nav-links" id="navlinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i id="hide_btn" class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="report.html">Report Disaster</a></li>
-                    <li><a href="contact us.html">Contact Us</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li onclick="gotoHome()"><a>Home</a></li>
+                    <li onclick="gotoStyles()"><a>Styles</a></li>
+                    <li onclick="gotoTrending()"><a>Trending 🔥</a></li>
+                    <li onclick="gotoBrands()"><a>Brands</a></li>
+                    <li onclick="gotoAboutus()"><a>About Us</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i id="show_btn" class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <div class="text-box">
-            <h1> SANJEEVANI PORTAL</h1>
+        <div class="text-box" id="home">
+            <h1> BE THE TREND</h1>
             <p>
-                THE SANJEEVANI PORTAL IS A WEB-BASED DISASTER PREDICTION AND RESPONSE
-SYSTEM DEVELOPED , UNDER THE THEME OF DISASTER MANAGEMENT. THIS PROJECT LEVERAGES ARTIFICIAL INTELLIGENCE
-(AI) AND COMPUTER VISION TECHNOLOGIES TO COLLECT, ANALYZE, AND PREDICT
-NATURAL DISASTERS IN REAL-TIME! THE SYSTEM IS DESIGNED TO AUTOMATE THE
-PROCESS OF DISASTER DETECTION, PROVIDING IMMEDIATE ALERTS AND
-FACILITATING RAPID RESPONSE BY NOTIFYING NEARBY NATIONAL DISASTER
-RESPONSE FORCE (NDRF) TEAMS.
+                Discover a new way to express your style while making a positive impact on the planet. Sustainable fashion champions ethical practices, eco-friendly materials, and a commitment to reducing waste. We believe that fashion should not only look good but also do good.
 
+             Explore our curated collection of sustainable brands, learn about innovative practices, and find tips on how to build a conscious wardrobe. Together, we can reshape the fashion industry into one that values people and the environment. Join us on this journey towards a more sustainable future, one outfit at a time!
             </p>
-            <a href="https://www.ndrf.gov.in/disaster-awareness" class="hero-btn">Visit us to know more</a>
+            <a  class="hero-btn" onclick="gotoCampus()">Swipe down to explore</a>
         </div>
 
     </section>
 
 
-<!---------news-------------->
-<section class="news">
-    <h1>Latest News</h1>
-    <p>Check out latest news for detailed information.</p>
+<!---------styles-------------->
+<section id="news_section" class="news">
+    <h1>OUR EXPERTISE</h1>
+    <p>Check Out Our Latest Collection of stylish, sustainable pieces designed to elevate your wardrobe!.</p>
     <div class="row">
         <div class="course-col">
-            <h3>FORECAST</h3>
-            <p>In the next 30 days, there will be 13 days of rain, the Max Temp is 35°(10-Sep, 11-Sep, 12-Sep, 15-Sep, 16-Sep, 17-Sep) and the Min Temp is 24°(23-Sep, 25-Sep, 30-Sep, 02-Oct, 03-Oct, 04-Oct).</p>
+            <h3>FAST FASHION</h3>
+            <p>
+                Explore our collection of stylish, affordable clothing that keeps you on-trend without breaking the bank. With new arrivals regularly, you’ll always find fresh pieces to enhance your wardrobe. While enjoying fast fashion’s convenience, we encourage you to consider its impact and make mindful choices. Embrace your style with confidence!</p>
         </div>
         <div class="course-col">
-            <h3>EMERGENCY ALERTS</h3>
-            <p>The Nilgiris on high alert!
-                The Nilgiris is under threat with an increased incidence of forest fires. Till May 2024, 37 forest fires were recorded.</p>
+            <h3>SLOW FASHION</h3>
+            <p>
+                Indulge in the elegance of slow fashion, where timeless design meets ethical craftsmanship. Our curated collection celebrates exquisite garments that prioritize quality, sustainability, and artistry. Embrace a refined wardrobe that transcends trends, encouraging mindful consumption and reducing waste. Join us in appreciating fashion that reflects sophistication and purpose, allowing you to make a statement with every piece you wear.</p>
         </div>
         <div class="course-col">
-            <h3>LOCAL NEWS</h3>
-            <p>A 26-year-old man was electrocuted to death upon coming into contact with an iron gate during heavy rain in Patel Nagar, central Delhi, on Monday, police said. The man may have slipped on the waterlogged street and grabbed the gate for support, getting electrocuted due to an exposed motor wire, they said..</p>
+            <h3>COMMUNITY SERVICE</h3>
+            <p>
+                Explore our collection of thoughtfully curated products that empower communities and promote sustainable practices. Each item supports local artisans and initiatives, ensuring your purchase makes a positive impact. From handmade crafts to eco-friendly goods, every product tells a story of resilience and hope. Join us in making a difference—shop with purpose and support the change you want to see in the world!.</p>
         </div>
     </div>
 </section>
 
+<!-----------trending-------------->
+<section id="trendz" class="trending">
+    <div class="banner">
+        <div class="content">
+            <h1 data-content="TRENDING ">
+                TRENDING 
+            </h1>
+            <div class="author">
+                <h2>--Be the First--</h2>
+                <p>
+                    Get top trending in fashion before everyone else.
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<!----------portfolio--------->
+<section class="port">
+    <div class="imgslider">
+
+    </div>
+</section>
+
+<!------showcase-------->
+<section class="show">
+    <div class="cont">
+        <div class="bux">
+            <img src="images.jpg/image1.jpg" alt="">
+        </div>
+        <div class="bux">
+            <img src="images.jpg/img3.jpg" alt="">
+        </div>
+        <div class="bux">
+            <img src="images.jpg/pixel8.jpg" alt="">
+        </div>
+        <div class="bux">
+            <img src="images.jpg/pixel9.jpg" alt="">
+        </div>
+        <div class="bux">
+            <img src="images.jpg/pixel10.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
 <!----------campus------------->
-<section class="campus">
+<section id="camp-us" class="campus">
     <h1>Features</h1>
-    <p> 1.REAL-TIME DISASTER PREDICTION
-        2. MULTILINGUALSUPPORT
-        3. AI-POWERED CHATBOT
-        4. WEBSOCKET-BASED COMMUNICATION:
-        THEUSEOF WEBSOCKET(WSS)PROTOCOL
-        ENSURESFAST AND SECURETWO-WAY
-        COMMUNICATION
-        5. TWO-STEP DATA VERIFICATION</p>
+    <p>
+        Enjoy our pre-order system, thrift store mode, and AI-based recycling tracker, designed to enhance your shopping experience and promote sustainable practices!</p>
 <div class="row">
     <div class="campus-col">
-        <img src="headquaters.png" >
+        <img src="dxt1.jpg" >
         <div class="layer">
-            <h3>NDRF Headquaters</h3>
+            <h3>Elegant Classic</h3>
         </div>
     </div>
     <div class="campus-col">
-        <img src="AI.jpg" >
+        <img src="collage.png" >
         <div class="layer">
-            <h3>AI ecosystem</h3>
+            <h3>Community Service</h3>
         </div>
     </div>
     <div class="campus-col">
-        <img src="response.jpeg" >
+        <img src="dxt2.png" >
         <div class="layer">
-            <h3>Quick Response</h3>
+            <h3>Casual</h3>
         </div>
 </div>
 
-
 </section>
 
+
+
 <!--------------facilities-------------->
-<section class="facilities">
-    <h1>Planning and Ecosystem</h1>
-    <p>ENABLING EARLY DISASTER PREDICTIONS, AUTOMATING THE CLASSIFICATION OF
-        DISASTER TYPES AND LOCATIONS, AND FACILITATING DIRECT COMMUNICATION WITH
-        RESPONSE TEAMS.</p>
+<section id="brands" class="facilities">
+    <h1><i class="fa-solid fa-arrow-up"></i>  NGO Related Products  <i class="fa-solid fa-arrow-up"></i></h1>
+    <p>Explore our collection of NGO-related products, including beautifully crafted toys and cozy cushions. Each item supports local artisans and community initiatives, promoting sustainable practices and empowering those in need. By choosing these unique pieces, you’re making a positive impact while adding charm to your home. Shop with purpose and help support meaningful change!.</p>
     <div class="row">
         <div class="facilities-col">
-            <img src="support.png">
-            <h3>Medical Supports</h3>
-            <p>For  any  illness/treatment/ intervention required by the  patient undergoing treatment in a  Government  Hospital run by Delhi Government  or  Central Government or Local Bodies or  Autonomous Hospital  under State Government..</p>
+            <img src="pixel1.jpg">
+            <h3>PRINTED T-SHIRT</h3>
+            <p>
+                Elevate your style with our vibrant printed t-shirt, crafted from soft, breathable fabric for all-day comfort. Its classic fit pairs effortlessly with jeans or shorts, making it perfect for any occasion. Made with eco-friendly materials, this shirt lets you express your personality while supporting sustainable fashion!.</p>
         </div>
         <div class="facilities-col">
-            <img src="saving.jpg">
-            <h3>Saving Lives</h3>
-            <p>he National Disaster Response Force (NDRF) in India plays a crucial role in saving lives during disasters through various specialized operations. NDRF teams conduct search operations to locate survivors trapped under debris and carry out rescue operations using specialized equipment. NDRF assists in evacuating people from affected areas to safer locations, minimizing the risk of further harm.</p>
+            <img src="img7.jpg">
+            <h3>Trendy Dress </h3>
+            <p>
+                Make a statement with our trendy dress, crafted from lightweight fabric for ultimate comfort. Its flattering silhouette and eye-catching patterns make it perfect for any occasion—easily dress it up or down. Embrace your style with this versatile must-have!
+                .</p>
         </div>
         <div class="facilities-col">
-            <img src="recovery.jpg">
-            <h3>Recovery Planning</h3>
-            <p>Disaster recovery planning is primarily managed by the National Disaster Management Authority (NDMA) at the central level, in coordination with State Disaster Management Authorities (SDMAs) and District Disaster Management Authorities (DDMAs).</p>
+            <img src="image2.jpg">
+            <h3>Classy co-ord set</h3>
+            <p>
+                Upgrade your style with our classy suit! Made from high-quality fabric, it has a tailored fit that looks great and feels comfortable. Ideal for formal events or work, this suit adds a touch of elegance to any outfit. Make a great impression with this timeless piece!
+             </p>
         </div>
     </div>
 
 </section>
 
+<!----------brands---------->
+
+<!-- <section class="brands">
+      <div class="wrapper">
+           <div class="item 1"></div>
+           <div class="item 2"></div>
+           <div class="item 3"></div>
+           <div class="item 4"></div>
+           <div class="item 5"></div>
+           <div class="item 6"></div>
+           <div class="item 7"></div>
+           <div class="item 8"></div>
+       </div>  
+</section> -->
+
+<div class="wrapper">
+    <div class="item item1"><h2><i class="fa-solid fa-industry"></i></h2><h5>Sustainable developement of our products reducing environmental damage.</h5></div>
+    <div class="item item2"><h2><i class="fa-brands fa-airbnb"></i></h2><h5>AI based tracking of recyclability</h5></div>
+    <div class="item item3"><h2><i class="fa-solid fa-spinner"></i></h2><h5>Ever changing trending fashion</h5></div>
+    <div class="item item4"><h2><i class="fa-solid fa-cart-shopping"></i></h2><h5>explore old money fits and timesless clothing through SLOW fashion.</h5></div>
+    <div class="item item5"><h2><i class="fa-solid fa-dumpster-fire"></i></h2><h5>Minimising waste production</h5></div>
+    <div class="item item6"><h2><i class="fa-solid fa-recycle"></i></h2><h5>Eco friendly recycled polyster organic fabric</h5></div>
+    <div class="item item7"><h2><i class="fa-solid fa-certificate"></i></h2><h5>Best quality materials from certified brands</h5></div>
+    <div class="item item8"><h2><i class="fa-solid fa-handshake-angle"></i></h2><h5>Partnership with NGO's to promote social service</h5></div>
+  </div>
+
+
+
+
+
+
+
 
 <!-----------testimonials----------->
-<section class="testimonials">
+<section id="ab_out" class="testimonials">
     <h1>What our User says</h1>
     <p>Check out reviews by our users.</p>
     <div class="row">
         <div class="testimonials-col">
             <img src="user1.jpg">
             <div>
-                <p>It provides information on natural and man-made disasters, emergency kits, and help line centers.</p>
+                <p>It is a very good and trusted website.
+                    I ordered multiple clothes and all of them were great 😍.
+                </p>
                     <h3>Paul</h3>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -170,25 +250,25 @@ RESPONSE FORCE (NDRF) TEAMS.
 
 <!---------contact us---------->
 <section class="cta">
-    <h1>Contact for Emergency Support</h1>
-    <a href="contacts.html" class="hero-btn1">CONTACT US</a>
+    <h1>Visit Us <i class="fa-regular fa-at"></i></h1>
+    <a class="hero-btn1">www.fash_ion.com</a>
 </section>
 
 
 <!---------footer---------->
-<section class="footer">
+<sction class="footer">
     <h4>About Us</h4>
-    <p> THE SANJEEVANI PORTAL HAS THE POTENTIAL TO SAVE LIVES, REDUCE PROPERTY DAMAGE, AND
-        IMPROVE DISASTER RESPONSE TIMES. <br> MAKING IT A VALUABLE CONTRIBUTION TO
-        THE FIELD OF DISASTER MANAGEMENT.</p>
-    <div class="icons">
-        <i class="fa-solid fa-facebook"></i>
-        <i class="fa-solid fa-instagram"></i>
-        <i class="fa-solid fa-twitter"></i>
-        <i class="fa-solid fa-linkedin"></i>
-    </div>
-    <p>Made by DOODLES</p>
-</section>
+      <p class="puc-h">
+        We are the organization with an aim to reduce waste and environmental damage from fashion. By promoting sustainable practices and offering eco-friendly products, we aim to create a positive impact on the planet. Join us in our commitment to responsible fashion and help us make a difference! </p>
+      <div class="icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-discord"></i>
+      </div>
+          <p class="puch">Made with  <i class="fa-regular fa-heart"></i>  by DOODLES</p>
+  </section>
 
 
 

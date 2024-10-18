@@ -34,3 +34,27 @@ document.getElementById('get-location').addEventListener('click', function() {
             'Geolocation is not supported by this browser.';
     }
 });
+function gotoStyles() {
+    const element = document.getElementById("news_section");
+    element.scrollIntoView({ behavior: 'smooth'});
+}
+function gotoTrending() {
+    const element = document.getElementById("trendz");
+    element.scrollIntoView({ behavior: 'smooth'});
+}
+function gotoBrands() {
+    const element = document.getElementById("brands");
+    element.scrollIntoView({ behavior: 'smooth'});
+}
+function gotoAboutus() {
+    const element = document.getElementById("ab_out");
+    element.scrollIntoView({ behavior: 'smooth'});
+}
+function gotoHome() {
+    const element = document.getElementById("home");
+    element.scrollIntoView({ behavior: 'smooth'});
+ }
+ function gotoCampus() {
+    const element = document.getElementById("camp-us");
+    element.scrollIntoView({ behavior: 'smooth'});
+}
